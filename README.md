@@ -37,9 +37,9 @@ La carpeta `salidas`, que se incluye al generar `resultados_centros.zip`, contie
 - `ocupacion_actividad.png`: gráfico de ocupación por actividad y turno.
 - `fuentes.json`: información sobre el origen de los datos utilizados.
 
-## Revisión con IA
+## Uso responsable de la IA
 
-Durante la práctica, hacemos dos revisiones con IA, comprobando las sugerencias que nos da:
+Durante la práctica, hemos utilizado las herramientas de IA de forma responsable y crítica. En particular, la hemos utilizado para hacer revisiones de código, comprobando las sugerencias que nos da. Dos ejemplos de estas revisiones son los siguientes:
 
 1. **Unión de datos (T5).** Revisamos si era suficiente unir la meteorología por ciudad. Mantuvimos la unión por `ciudad` y `fecha`, ya que hacerlo solo por ciudad duplicaría las sesiones. Así, comprobamos que el resultado conservaba las 504 filas originales.
 2. **Agrupaciones (T7).** Revisamos cómo sumar visitas por centro y calcular la ocupación media por actividad y turno. Utilizamos `groupby` con `sum` y `mean`, respectivamente, y comprobamos que el total de visitas seguía siendo 8.085 y que se obtenían las ocho combinaciones de actividad y turno.
